@@ -4,36 +4,63 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="description" content="app for MIU "/>
-		<meta name="keywords" content="automotive, list, full sail"/>
+		<meta name="keywords" content="workout, list, full sail"/>
 		<meta name="robots" content="noindext, nofollow"/>
 		<meta name="viewport" content="user-scalable=no, width=device-width"/>
 		<meta name="viewport" content="target-densitydpi=device-dpi"/>
 		
-		<title>Auto Track</title>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-
-		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		<script src="js/libs/modernizr.custom.min.js"></script>
+		<title>Stay Fit</title>
+		<link rel="stylesheet" href="themes/theme2.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	</head>
 
 	<body>
 	
-	<div data-role="page">
+	<div data-role="page" data-theme="a">
 
-			<div data-role="header" data-position="inline" data-theme="b" >
-			<a href="https://github.com/DeeClark/MiU-1203" data-icon="home">GIT Link</a>
+		<div data-role="header" data-position="inline" data-theme="a" >
+			<a href="https://github.com/dmcjrgamc/miu" data-icon="home">GIT Link</a>
 			<h1>Stay Fit</h1>
-			<a href="http://deeclark.github.com/new-crud/" data-icon="refresh">gh-page</a>
-			</div>
+			<a href="http://dmcjrgamc.github.com/miu" data-icon="refresh">gh-page</a>
+		</div><!--header-->
+		
+		<div data-role="content" data-theme="a">
 			
-			<input type="text" name="search" value="Search" />
-	</div>		
+			<label for="search-basic">Search through previous sessions</label>
+			<input type="search" name="search" id="search-basic" value="Search some data" />
+			<div data-role="fieldcontain">
+		
+			<img border="2" src="#" />
+			<p>StayFit helps with workout organization.</p>
+			<a href="form.html"data-role="button" >Add new session</a>
+	
+		
+		<div data-role="fieldcontain" id="browse">
+			<label for="browse">View workout plans</label>
+			<ul data-role="listview" data-inset="true" data-theme="a">
 
+            <li><a href="#">Upper Boddy</a></li>
+
+            <li><a href="#">Lower Body</a></li>
+
+            <li><a href="#">Schedule</a></li>
+
+            <li><a href="#">Cardio</a></li>
+            </div>
+         </div><!--content-->   
+	
+	<div data-role="footer"  data-theme="a" >
+			<a href="index.html" data-icon="back">back</a>
+			<h1>MiU 1206</h1>
+			
+		</div><!--/footer-->	
+	</div>	<!--/page-->	
 	
 
 	
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
 
 	</body>	
 
